@@ -50,6 +50,18 @@ jobs:
       env:
         SKIP_JDK_VERSION_CHECK: true
         
+    - name: Generate Gradle Wrapper
+      run: |
+        # Download gradle wrapper jar if missing
+        if [ ! -f "gradle/wrapper/gradle-wrapper.jar" ]; then
+          mkdir -p gradle/wrapper
+          curl -L -o gradle/wrapper/gradle-wrapper.jar https://github.com/gradle/gradle/releases/download/v8.0.0/gradle-wrapper.jar || \
+          curl -L -o gradle/wrapper/gradle-wrapper.jar https://services.gradle.org/distributions/gradle-8.0-wrapper.jar || \
+          echo "Warning: Could not download gradle-wrapper.jar, will try to continue"
+        fi
+        # Make gradlew executable
+        chmod +x gradlew
+        
     - name: Build Debug APK
       run: ./gradlew assembleDebug --stacktrace
       
