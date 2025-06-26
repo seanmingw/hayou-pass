@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">哈友绕过器</string>
+    <string name="start_bypass">启动绕过</string>
+    <string name="stop_bypass">停止绕过</string>
+    <string name="status_waiting">等待启动...</string>
+    <string name="status_starting">正在启动绕过服务...</string>
+    <string name="status_running">绕过服务运行中</string>
+    <string name="status_stopped">绕过服务已停止</string>
+    <string name="status_error">启动失败，需要Root权限</string>
+    <string name="target_app_found">检测到目标应用</string>
+    <string name="target_app_not_found">未检测到哈友工具箱</string>
+    <string name="bypass_activated">绕过已激活</string>
+    <string name="bypass_deactivated">绕过已停止</string>
+    <string name="need_root">需要Root权限</string>
+    <string name="notification_title">哈友工具箱绕过</string>
+    <string name="notification_text">绕过服务正在运行中...</string>
+    <string name="channel_name">绕过服务</string>
+    <string name="channel_description">哈友工具箱绕过服务正在运行</string>
+    <string name="copyright">仅供学习研究使用，请勿用于非法用途</string>
+    <string name="features">功能说明：\n• 自动检测哈友工具箱应用\n• 绕过网络授权验证\n• 绕过本地校验机制\n• 支持360加固应用</string>
+</resources>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#f5f5f5">
+
+    <!-- 标题 -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="哈友工具箱绕过器"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#333333"
+        android:gravity="center"
+        android:layout_marginBottom="24dp" />
+
+    <!-- Logo区域 -->
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:src="@mipmap/ic_launcher"
+        android:layout_marginBottom="24dp" />
+
+    <!-- 状态显示区域 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/status_background"
+        android:padding="16dp"
+        android:layout_marginBottom="24dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="状态信息"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#666666"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/status_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="等待启动..."
+            android:textSize="14sp"
+            android:textColor="#333333"
+            android:minHeight="60dp"
+            android:gravity="center_vertical" />
+
+    </LinearLayout>
+
+    <!-- 功能说明 -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="功能说明：\n• 自动检测哈友工具箱应用\n• 绕过网络授权验证\n• 绕过本地校验机制\n• 支持360加固应用"
+        android:textSize="12sp"
+        android:textColor="#666666"
+        android:lineSpacingExtra="4dp"
+        android:layout_marginBottom="24dp" />
+
+    <!-- 按钮区域 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="auto">
+
+        <Button
+            android:id="@+id/start_bypass_btn"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="启动绕过"
+            android:textSize="16sp"
+            android:textColor="#ffffff"
+            android:background="@drawable/button_start_background"
+            android:layout_marginBottom="12dp" />
+
+        <Button
+            android:id="@+id/stop_bypass_btn"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="停止绕过"
+            android:textSize="16sp"
+            android:textColor="#ffffff"
+            android:background="@drawable/button_stop_background"
+            android:layout_marginBottom="12dp" />
+
+    </LinearLayout>
+
+    <!-- 版权信息 -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="仅供学习研究使用，请勿用于非法用途"
+        android:textSize="10sp"
+        android:textColor="#999999"
+        android:gravity="center"
+        android:layout_marginTop="16dp" />
+
+</LinearLayout>

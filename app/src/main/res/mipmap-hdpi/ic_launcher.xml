@@ -1,0 +1,22 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="48dp"
+    android:height="48dp"
+    android:viewportWidth="48"
+    android:viewportHeight="48">
+    
+    <!-- 背景圆形 -->
+    <path
+        android:fillColor="#2196F3"
+        android:pathData="M24,4C12.95,4 4,12.95 4,24s8.95,20 20,20s20,-8.95 20,-20S35.05,4 24,4z"/>
+    
+    <!-- 盾牌图标 -->
+    <path
+        android:fillColor="#ffffff"
+        android:pathData="M24,12l-8,3v6c0,4.97 3.58,9.6 8,10.5c4.42,-0.9 8,-5.53 8,-10.5v-6L24,12z"/>
+    
+    <!-- 对勾 -->
+    <path
+        android:fillColor="#4CAF50"
+        android:pathData="M20,25l-3,-3l-1.5,1.5L20,28l8,-8l-1.5,-1.5L20,25z"/>
+        
+</vector>
